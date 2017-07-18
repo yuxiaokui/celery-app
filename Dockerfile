@@ -3,7 +3,7 @@ MAINTAINER xi4okv
 
 RUN dnf -y install python
 
-RUN pip install celery redis IPy pymongo
+RUN pip install celery redis IPy pymongo requests
 
 ENV THREAD 10
 
