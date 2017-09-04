@@ -7,4 +7,4 @@ RUN pip install celery redis IPy pymongo requests
 
 ENV THREAD 10
 
-ENTRYPOINT  cd /app && celery -A tasks worker  --loglevel=info -c $THREAD
+ENTRYPOINT  cd /opt  && celery -A tasks worker  --loglevel=info -c $THREAD
