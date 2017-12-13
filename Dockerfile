@@ -5,6 +5,8 @@ RUN dnf -y install python
 
 RUN pip install celery redis IPy pymongo requests
 
-ENV THREAD 10
+ENV THREAD 50
 
-CMD  cd /opt  && celery -A tasks worker  --loglevel=info -c $THREAD
+tail -f /dev/null
+
+
