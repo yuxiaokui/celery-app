@@ -7,6 +7,6 @@ RUN pip install celery redis IPy pymongo requests
 
 ENV THREAD 50
 
-tail -f /dev/null
+CMD tail -f /dev/null
 
 
